@@ -1,0 +1,173 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color:rgb(135, 163, 235);
+}
+ul,
+li,
+a {
+    text-decoration: none;
+    list-style: none;
+    color: inherit;
+}
+
+:root {
+    --green: #2c3831;
+    --light-green: #abfda8;
+    --red: #721c24;
+    --pink: #f8d7da;
+}
+
+.container {
+    background-image: url(wall.png);
+    background-size: cover;
+    max-width: 900px;
+    margin: 0px auto;
+    padding: 0px 0.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.feedback {
+    width: 100%;
+    background-color: transparent;
+    /* color: var(--red);
+    border: 01px solid var(--red); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.alert {
+        padding: 0.2rem;
+        border-radius: 05px;
+        margin-bottom: 2rem;
+        font-weight: 300;
+        font-size: medium;
+    }
+
+    &.red {
+        background-color: var(--pink);
+        color: var(--red);
+        border: 02px solid var(--red);
+    }
+    &.green {
+        background-color: var(--light-green);
+        color: var(--green);
+        border: 02px solid var(--green);
+    }
+}
+ #clear-btn{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    background-color: transparent;
+    color: rgb(33, 43, 44);
+    border: 01px solid black;
+    border-radius: 05px;
+    padding: 0.2rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0px 02px 04px rgb(33, 43, 44);
+    &:hover{
+        background-color: rgb(160, 159, 159);
+        color: honeydew;
+    }
+} 
+.btn{
+    background-color: transparent;
+    color: rgb(33, 43, 44);
+    border: 01px solid black;
+    border-radius: 05px;
+    padding: 0.2rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0px 02px 04px rgb(33, 43, 44);
+    &:hover{
+        background-color: rgb(160, 159, 159);
+        color: honeydew;
+    }
+}
+#itemform{
+    width: 100%;
+    margin: 3rem auto;
+    &.h2{
+        font-size: 2rem;
+        text-transform: capitalize;
+    }
+    .input-group{
+        display: flex;
+        gap: 1rem;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+    & input{
+        width: 80%;
+        padding: 0.5rem;
+        border: 01px solid black;
+        border-radius: 05px;
+    }
+}
+.item-container{
+    width: 100%;
+    align-items: center;
+    .item-list{
+        margin-bottom: 02rem;
+        .item{
+            padding: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 01px solid black;
+            margin-bottom: 0.25rem;
+            .item-info{
+                display: flex;
+                gap: 1rem;
+                align-items: center;
+                .item-index{
+                    border: 01px solid black;
+                    border-radius: 06px;
+                    padding: 0.5rem;
+                    &.completed{
+                        color: rgb(71, 71, 71);
+                        border: 01px solid rgb(71, 71, 71);
+                    }
+                }
+                .item-name{
+                    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                    text-transform: capitalize;
+                    &.completed{
+                        text-decoration: line-through;
+                        /* color: darkgray; */
+                        color: rgb(71, 71, 71);
+                    }
+                }
+            }
+            .icons{
+                display: flex;
+                gap: 1rem;
+                .far{
+                cursor: pointer;
+                }
+                .fa-check-circle{
+                    color: black;
+                }
+                .fa-solid{
+                    color: red;
+                }
+            }
+        }
+    }
+}

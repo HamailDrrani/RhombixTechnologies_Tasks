@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo-List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <header class="feedback alert">Add Your Tasks</header>
+        <form id="itemform">
+            <h2>To-Do List</h2>
+            <div class="input">
+                <input type="text" id="itemInput" placeholder="Add New Task Here">
+                <button class="btn" id="add-item" type="submit">Add</button>
+            </div>
+        <!-- </div> -->
+        </form>
+        <div class="item-container">
+            <div class="item-list">
+                <!-- <div class="item">
+                    <div class="item-info">
+                        <h5 class="item-index">1</h5>
+                        <p class="item-name">Item One</p>
+                     </div>
+                    <div class="icons">
+                        <i class="far fa-check-circle complete-item"></i>
+                        <i class="far fa-edit edit-item"></i>
+                        <i class="far fa-times-circle delete-item"></i>
+                    </div>
+                </div>   -->
+            </div>
+        </div> 
+        <button id="clear-btn" type="button">Clear Task</button>
+    </div> 
+    <script src="script.js"></script>
+</body>
+</html>
