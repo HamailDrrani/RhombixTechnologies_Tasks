@@ -23,3 +23,6 @@ Technologies Used:
 - **Add a Task**: Type in the task details and click the "Add" button.
 - **Clear Tasks**: Use clear button to switch between all tasks, completed, or pending.
 - **Edit/Delete Tasks**: Click the edit or delete icon next to each task to modify or remove it.
+- Your Name Email:
+- Email: khandurrani740@gmail.com 
+-LinkedIn:  https://www.linkedin.com/in/hamail-durrani-11b3b8294
